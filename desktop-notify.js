@@ -99,6 +99,9 @@
     }
     function getWrapper(notification) {
         return {
+            getOriginal: function() {
+                return notification;
+            },
             close: function () {
                 if (notification) {
                     if (notification.close) {
